@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="258dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        app:cardBackgroundColor="#8DB6D5"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:contentPadding="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="300dp"
+            android:layout_height="258dp"
+            android:padding="4dp"
+            app:cardElevation="4dp"
+            app:contentPadding="4dp"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="50dp">
+
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_directions_bike_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
+                android:layout_width="273dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="10dp"
+                android:text="Bicicletas"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/header_image" />
+
+            <TextView
+                android:id="@+id/subhead"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_width="272dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                android:text="Porque usarlas?"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+            <TextView
+                android:id="@+id/body"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="274dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Usar bicicletas no solo mejora la salud personal y el bienestar, sino que también tiene un impacto positivo en el medio ambiente, la economía y la movilidad urbana."
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/subhead" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="258dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="25dp"
+        app:cardBackgroundColor="#8DB6D5"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:contentPadding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            tools:layout_editor_absoluteY="31dp">
+
+            <ImageView
+                android:id="@+id/header_image2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/baseline_electric_scooter_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title2"
+                style="@style/TextAppearance.MaterialComponents.Headline3"
+                android:layout_width="269dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="Scooter eléctrico"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_image2" />
+
+            <TextView
+                android:id="@+id/subhead2"
+                style="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:layout_width="264dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                android:text="Porque usarlos?"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+            <TextView
+                android:id="@+id/body2"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_width="266dp"
+                android:layout_height="78dp"
+                android:layout_marginTop="10dp"
+                android:gravity="fill|fill_horizontal"
+                android:text="Los scooters eléctricos proporcionan una movilidad rápida y eficiente en áreas urbanas, reduciendo el tiempo de viaje y evitando el tráfico."
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subhead2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
